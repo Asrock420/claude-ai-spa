@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Claude AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Main SPA Container -->
+    <div id="app-container">
+        
+        <!-- Chat Tab (Active by default) -->
+        <div id="chat-tab" class="tab-content active">
+            <div class="chat-header">
+                <h2>Claude 3.5 Sonnet (AWS)</h2>
+            </div>
+            
+            <div class="chat-box" id="chat-box">
+                <!-- Welcome Message -->
+                <div class="message ai-message">হ্যালো বস! আমি Claude। আজ তোমার জন্য কী করতে পারি?</div>
+            </div>
+            
+            <div class="input-area">
+                <textarea id="user-input" placeholder="এখানে মেসেজ লিখুন... (Enter চাপলে সেন্ড হবে)"></textarea>
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+
+        <!-- Future Tabs can go here (e.g., Settings, History) -->
+
+    </div>
+
+    <!-- App Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
